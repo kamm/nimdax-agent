@@ -7,8 +7,6 @@ import java.io.InputStreamReader;
 import java.net.URISyntaxException;
 
 import junit.framework.TestCase;
-import pl.kmetrak.nimdax.agent.model.JstatData;
-import pl.kmetrak.nimdax.agent.model.JstatGCData;
 import pl.kmetrak.nimdax.agent.model.JstatTimestampData;
 import sun.jvmstat.monitor.MonitorException;
 import sun.jvmstat.monitor.MonitoredHost;

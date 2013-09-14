@@ -87,9 +87,9 @@ public class NimdaxMonitor {
 	}
 	
 	MonitoredVm getMonitoredVM(MonitoredHost monitoredHost, int pid) throws MonitorException, URISyntaxException{
-		Set jvms = monitoredHost.activeVms();
-		for (Object o : jvms) {
-			int lvmid = ((Integer) o).intValue();
+		Set<Integer> jvms = monitoredHost.activeVms();
+		for (Integer o : jvms) {
+			int lvmid = o.intValue();
 			if(lvmid==pid){
 				String vmidString = "//" + lvmid + "?mode=r";
 				VmIdentifier id = new VmIdentifier(vmidString);
